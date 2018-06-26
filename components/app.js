@@ -9,7 +9,7 @@
 			<app-footer></app-footer>
 		</div>
 	`
-	window.app = {
+	window.App = {
 		template,
 		components: {
 			todoHeard,
