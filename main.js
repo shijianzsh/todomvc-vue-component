@@ -1,7 +1,7 @@
 
 new Vue({
 	el: '#app',
-	template: '<App />',
+	template: '<App/>',
 	components: {
 		App
 	}
