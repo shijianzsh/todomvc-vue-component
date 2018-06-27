@@ -7,26 +7,20 @@
 			<ul class="todo-list">
 				<!-- These are here just to show the structure of the list items -->
 				<!-- List items should get the class \`editing\` when editing and \`completed\` when marked as completed -->
-				<li class="completed">
+				<li class="completed" v-for="item in todos">
 					<div class="view">
 						<input class="toggle" type="checkbox" checked>
-						<label>Taste JavaScript</label>
+						<label>{{ item.title }}</label>
 						<button class="destroy"></button>
 					</div>
 					<input class="edit" value="Create a TodoMVC template">
-				</li>
-				<li>
-					<div class="view">
-						<input class="toggle" type="checkbox">
-						<label>Buy a unicorn</label>
-						<button class="destroy"></button>
-					</div>
-					<input class="edit" value="Rule the web">
 				</li>
 			</ul>
 		</section>
 	`
 	window.todoList = {
-		template
+		template,
+		props:['todos'],
+
 	}
 })()
